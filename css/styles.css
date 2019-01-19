@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Web Fonts*/
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+/*Pseudo code*/
+
+a:active {
+  color: #ffffff;
+}
+
+a:hover {
+  background-color: #ff3333;
+}
+
+/* styles for 320px screen*/
+
+@media screen and (min-width: 320px) {
+
+
+
+body {
+  background: #D3D3D3;
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+ display: flex;
+ justify-content: center;
+}
+
+
+ .main-nav a  {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 2em;
+  padding: 10px 0;
+  padding-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background: white;
+}
+
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+
+.header-wrapper {
+  background-color: #4dc3ff;
+  padding: 10px 10px;
+  margin: -10px;
+
+}
+
+ul {
+list-style-type: none;
+}
+
+p,h3,h2 {
+  text-align: center;
+}
+
+
+ .marketing,
+ .search,
+ .travel,
+ .favorite-spots,
+ .photo,
+ .calc,
+ .html,
+ .css,
+ .js {
+   height: auto;
+   width: auto;
+   max-width: 367px;
+   max-height: 225px;
+}
+
+
+
+.hidden-nav {
+  display:none;
+}
+
+.bottom-wrapper  {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.top-link {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #4dc3ff;
+  padding: 10px 10px;
+  margin: 0 -10px;
+  margin-top: 100px;
+}
+
+.name {
+  padding-left: 15px;
+}
+
+.container {
+  padding-top: 0;
+}
+
+}
+
+  /* styles for 768px screen*/
+
+  @media screen and (min-width: 768px) {
+
+    .main-nav,
+    .main-header {
+      display: flex;
+    }
+
+    .main-nav a {
+      background: #4dc3ff;
+    }
+
+
+ .main-header {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .profile {
+   display: flex;
+   flex-direction: row-reverse;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.skills-container {
+  display: inline-flex;
+}
+
+#skills {
+  text-align: center;
+
+}
+  .top-link {
+    display: none;
+  }
+
+  .hidden-nav, li {
+    display: inline;
+    padding-right: 10px;
+  }
+
+
+  a {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+  }
+
+}
+
+
+
+/* styles for 1024px screen*/
+
+@media screen and (min-width: 1024px) {
+
+  .three-row {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 15px;
+    }
+
+
+    .row, #skills {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
