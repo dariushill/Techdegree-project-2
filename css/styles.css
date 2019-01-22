@@ -16,15 +16,13 @@ a:active {
   color: #ffffff;
 }
 
-a:hover {
+.main-nav a:hover,a:hover {
   background-color: #ff3333;
 }
 
 /* styles for 320px screen*/
 
 @media screen and (min-width: 320px) {
-
-
 
 body {
   background: #D3D3D3;
@@ -122,7 +120,6 @@ footer {
 }
 
 }
-
   /* styles for 768px screen*/
 
   @media screen and (min-width: 768px) {
@@ -149,16 +146,14 @@ footer {
    margin-right: 10px;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin-left: 1%;
-  margin-top: 1%;
-}
+  .img-wrapper {
+    margin-left: 10px;
+  }
+
 .skills-container {
-  display: inline-flex;
+  display: flex;
+  flex-basis: 100%;
+  flex: 4;
 }
 
 #skills {
@@ -201,18 +196,32 @@ footer {
     margin: 15px;
     }
 
-
     .row, #skills {
       align-items: center;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
+      justify-content: space-around;
     }
 
     .col {
       display: flex;
       flex-direction: column;
-      flex-basis: 100%;
       flex: 1;
-    }
+      }
+
+      .col-marketing,
+      .col-search,
+      .col-travel,
+      .col-spots,
+      .col-gallery,
+      .col-calculator,
+      .col-html,
+      .col-css,
+      .col-js  {
+        flex-basis: 33%;
+        align-self: baseline;
+      }
+
+  }
