@@ -81,13 +81,15 @@ p,h3,h2 {
  .calc,
  .html,
  .css,
- .js {
+ .js,
+ .thinking,
+ .teamwork,
+ .communication {
    height: auto;
    width: auto;
    max-width: 367px;
    max-height: 225px;
 }
-
 
 
 .hidden-nav {
@@ -118,7 +120,14 @@ footer {
 .container {
   padding-top: 0;
 }
-
+.skills-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
 }
   /* styles for 768px screen*/
 
@@ -150,11 +159,6 @@ footer {
     margin-left: 10px;
   }
 
-.skills-container {
-  display: flex;
-  flex-basis: 100%;
-  flex: 1;
-}
 
 #skills {
   text-align: center;
@@ -224,9 +228,12 @@ footer {
       .col-calculator,
       .col-html,
       .col-css,
-      .col-js  {
-        flex-basis: 33%;
-        align-self: baseline;
+      .col-js,
+      .col-communication,
+      .col-teamwork,
+      .col-thinking {
+      flex-basis: 33%;
+      align-self: baseline;
       }
 
   }
