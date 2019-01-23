@@ -15,7 +15,7 @@ a:active {
 
 /* styles for 320px screen*/
 
-@media screen and (min-width: 320px) {
+
 
 body {
   background: #D3D3D3;
@@ -114,7 +114,7 @@ footer {
 .container {
   padding-top: 0;
 }
-}
+
 
   /* styles for 768px screen*/
 
@@ -182,34 +182,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-
-  }
-
-
-}
-
-
-
-/* styles for 1024px screen*/
-
-@media screen and (min-width: 1024px) {
-
-  .main-nav,
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  .main-nav a {
-    background: #4dc3ff;
-  }
-
-
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 30px;
   }
 
   .three-row {
@@ -233,6 +205,37 @@ footer {
       flex-direction: column;
       flex: 1;
       }
+
+
+}
+
+
+
+/* styles for 1024px screen*/
+
+@media screen and (min-width: 1024px) {
+
+  .main-nav,
+  .large-screen {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .main-nav a {
+    background: #4dc3ff;
+  }
+
+
+  .large-screen {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+
+
+
+
       .col-marketing,
       .col-search,
       .col-travel,
