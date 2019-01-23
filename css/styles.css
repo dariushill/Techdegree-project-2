@@ -3,13 +3,6 @@
 }
 
 /*Web Fonts*/
-@font-face {
-  font-family: 'Abolition Regular';
-  src: url('../fonts/abolition-regular-webfont.eot');
-  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/abolition-regular-webfont.woff') format('woff'),
-       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
-}
 /*Pseudo code*/
 
 a:active {
@@ -26,7 +19,7 @@ a:active {
 
 body {
   background: #D3D3D3;
-  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -78,13 +71,14 @@ p,h3,h2 {
  .travel,
  .favorite-spots,
  .photo,
- .calc,
+ .calc
+ /*
  .html,
  .css,
  .js,
  .thinking,
  .teamwork,
- .communication {
+ .communication*/ {
    height: auto;
    width: auto;
    max-width: 367px;
@@ -120,26 +114,25 @@ footer {
 .container {
   padding-top: 0;
 }
-.skills-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
 }
-}
+
   /* styles for 768px screen*/
 
   @media screen and (min-width: 768px) {
 
     .main-nav,
     .main-header {
-      display: flex;
+      display: block;
+
     }
 
     .main-nav a {
       background: #4dc3ff;
+      display: inline-block;
+    }
+
+    .main-nav {
+      text-align: center;
     }
 
 
@@ -167,6 +160,13 @@ footer {
   .top-link {
     display: none;
   }
+/*
+  .skills-row {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  */
 
   .hidden-nav, li {
     display: inline;
@@ -185,6 +185,7 @@ footer {
 
   }
 
+
 }
 
 
@@ -193,9 +194,22 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+  .main-nav,
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .main-nav a {
+    background: #4dc3ff;
+  }
+
+
   .main-header {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 30px;
   }
 
   .three-row {
@@ -219,21 +233,23 @@ footer {
       flex-direction: column;
       flex: 1;
       }
-
       .col-marketing,
       .col-search,
       .col-travel,
       .col-spots,
       .col-gallery,
-      .col-calculator,
+      .col-calculator {
+      flex-basis: 33%;
+      align-self: baseline;
+      }
+/*
       .col-html,
       .col-css,
       .col-js,
       .col-communication,
       .col-teamwork,
       .col-thinking {
-      flex-basis: 33%;
-      align-self: baseline;
+        width: 100%;
       }
-
-  }
+      */
+}
