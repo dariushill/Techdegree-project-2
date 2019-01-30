@@ -3,6 +3,8 @@
 }
 
 /*Web Fonts*/
+
+
 /*Pseudo code*/
 
 /*a:active {
@@ -68,6 +70,7 @@ list-style-type: none;
 
 p,h3,h2 {
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -85,7 +88,7 @@ p,h3,h2 {
  .communication {
    height: auto;
    width: auto;
-   max-width: 367px;
+   max-width: 320px;
    max-height: 225px;
 }
 
@@ -156,17 +159,8 @@ footer {
     margin-left: 10px;
   }
 
-#skills {
-  text-align: center;
-
-}
   .top-link {
     display: none;
-  }
-  .skills-row {
-    display: flex;
-    justify-content: center;
-    flex-basis: 50%
   }
 
   .hidden-nav, li {
@@ -184,37 +178,24 @@ footer {
     justify-content: space-between;
     align-items: baseline;
   }
+ .wrapper {
+   align-self: baseline;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-around;
 
-  .three-row {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin: 15px;
-    }
-
-    .row, #skills {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: space-around;
-    }
-
-    .col {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      }
-
-      .three-col {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
+ }
 
 
+ .container {
+   flex: 1;
+ }
 
+ .img-wrapper {
+   flex: 1;
+ }
 
 }
 
@@ -225,35 +206,24 @@ footer {
 @media screen and (min-width: 1024px) {
 
   .main-nav,
-  .large-screen {
+  .title {
     display: flex;
     justify-content: space-between;
 
   }
-
+  .wrapper {
+    align-self: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+    justify-content: space-around;
+  }
   .main-nav a {
     background: #D3D3D3;
   }
 
 
-  .large-screen {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 30px;
-  }
-
-
-
-
-      .col-marketing,
-      .col-search,
-      .col-travel,
-      .col-spots,
-      .col-gallery,
-      .col-calculator {
-      flex-basis: 33%;
-      align-self: baseline;
-      }
 
 
 

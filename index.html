@@ -13,16 +13,17 @@
   <body>
         <div class="header-wrapper">
           <header class="main-header large-screen">
+            <div class="title">
               <h1> Darius Hill</h1>
               <nav>
                 <ul class="main-nav">
                   <li><a href="#"><strong>Home</strong></a></li>
                   <li><a href="#main"><strong>Portfolio</strong></a></li>
                   <li><a href="#contact"><strong>Contact</strong></a></li>
-                <!---  <li><a href="#skills"><strong>Skills</strong></a></li> --->
+                <!-- <li><a href="#skills"><strong>Skills</strong></a></li> -->
                 </ul>
               </nav>
-
+            </div>
             </header>
              <div class="profile">
               <div class= "profile-image">
@@ -40,10 +41,8 @@
               <h1 id="main">Portfolio</h1>
 
 
-            <div class="three-row">
-              <div class="row">
               <!-- Marketing Page-->
-              <div class="col-marketing">
+              <div class="wrapper">
               <div class="container ">
                 <div class="img-wrapper">
                   <img class="marketing" src="images/portfolio-1.png" alt=" marketing page"/>
@@ -51,12 +50,10 @@
               <h3>Marketing Page</h3>
               <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
             </div>
-          </div>
           <!-- Marketing Page End-->
 
 
           <!--Search Page-->
-          <div class="col-search">
             <div class="container ">
               <div class="img-wrapper">
                 <img class="search" src="images/portfolio-2.png" alt="search page"/>
@@ -64,12 +61,10 @@
               <h3>Search Page</h3>
               <p>This project searches through a specific database to find information that the user is trying to look up.</p>
             </div>
-          </div>
           <!--Search Page End-->
 
 
             <!--Travel App*-->
-            <div class="col-travel">
               <div class="container ">
               <div class="img-wrapper">
                 <img class=" travel" src="images/portfolio-3.png" alt="travel website"/>
@@ -77,39 +72,33 @@
                 <h3>Travel App</h3>
                 <p>This project compares travel times based on different transportaion methods and tells you the best one.</p>
               </div>
-            </div>
             <!--Travel App End-->
 
 
               <!--Favorite Spots-->
-            <div class="col-spots">
-              <div class="container col">
+              <div class="container">
               <div class="img-wrapper">
                 <img class="favorite-spots" src="images/portfolio-4.png" alt="favorite spots on map"/>
               </div>
                 <h3>Map of Favorite Spots</h3>
                 <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
               </div>
-            </div>
               <!--Favorite Spots End-->
 
 
             <!-- Photo Gallery-->
-            <div class="col-gallery">
-              <div class="container col">
+              <div class="container">
               <div class="img-wrapper">
                 <img class="photo" src="images/portfolio-5.png" alt="photo-gallery"/>
               </div>
                 <h3>Photo Gallery</h3>
                 <p>This project shows pictures from a recent trip to the viewer and allows them to easily nevigate through photos</p>
               </div>
-            </div>
               <!--Photo Gallery End-->
 
 
             <!-- calculator-->
-            <div class="col-calculator">
-              <div class="container col">
+              <div class="container">
                 <div class="img-wrapper">
                   <img class="calc" src="images/portfolio-6.png" alt="calculator"/>
                 </div>
@@ -117,73 +106,56 @@
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
               </div>
             </div>
-          </div>
-        </div>
 
                 <!--calculator End-->
 
-
-          <!--     <h1 id="skills">Skills</h1>
-                <div class="skills-row ">
-               <div class="skills-container">
-                <div class="col-html ">
-                  <div class="container col">
-                    <div class="img-wrapper skills-wrapper">
-                      <img class="html" src="images/page-html.png" alt=" HTML badge"/>
-                    </div>
-                    <h3>HTML</h3>
+          <!--  <div class="skills-wapper">
+              <h1 id="skills">Skills</h1>
+               <div class="container">
+                  <div class="img-wrapper skills-wrapper">
+                    <img class="html" src="images/page-html.png" alt=" HTML badge"/>
+                  </div>
+                   <h3>HTML</h3>
                     <p> General understanding of how HTML works and its' uses to structure a web page.</p>
                 </div>
-              </div>
 
-              <div class="col-css">
-                <div class="container col three-col">
+                <div class="container">
                   <div class="img-wrapper skills-wrapper">
                     <img class="css" src="images/page-css.png" alt=" css badge"/>
                   </div>
                   <h3>CSS</h3>
                   <p>Basic understand on the use of CSS to style webpages to them unique</p>
                </div>
-            </div>
 
-            <div class="col-js">
-              <div class="container col three-col">
+              <div class="container">
                 <div class="img-wrapper skills-wrapper">
                   <img class="js" src="images/Javascript_badge.svg.png" alt=" javascript badge"/>
               </div>
               <h3>javascript</h3>
               <p>Basic understand of javascript.</p>
             </div>
-          </div>
-          <div class="col-thinking">
-            <div class="container col three-col">
+            <div class="container">
               <div class="img-wrapper thinking-wrapper">
                 <img class="thinking" src="images/thinking.png" alt="thinking face"/>
               </div>
               <h3> Critical Thinking</h3>
               <p> This is a skill I've picked up when troubleshooting my vehicals. Priceless!!!</p>
             </div>
-          </div>
-          <div class=" col-teamwork">
-            <div class="container col three-col">
+            <div class="container">
               <div class="img-wrapper teamwork-wrapper">
                 <img class="teamwork"src="images/teamwork.png" alt="working together"/>
               </div>
               <h3>Teamwork</h3>
-              <p>Another skill i learned while working with aircrafts. When we came together as a team to tackle difficult situations, the outcome was amazing</p>
+              <p>Another skill I learned while working with aircrafts. When we came together as a team to tackle difficult situations, the outcome was amazing</p>
             </div>
-          </div>
-          <div class="col-communication">
-            <div class="container col three-col">
+            <div class="container">
               <div class="img-wrapper communication-wrapper">
                 <img class="communication"src="images/communication.jpg" alt="communicationvskills"/>
               </div>
               <h3>Communication</h3>
               <p>Yet another skill I've learned with working on aircrafts.</p>
             </div>
-          </div>
-         </div>
-       </div> -->
+          </div> -->
 
 
     </main>
@@ -193,7 +165,7 @@
 <!-- Footer-->
       <footer>
           <h2 id="contact">Contacts</h2>
-          <div class="wrapper">
+          <div class="wrapper-Footer">
           <p>If your're in chatting or want more information about what I've been worrking on, I'd love to hear from you!</p>
         </div>
           <p class="phone-num">Phone: (888-888-8888)</p>
@@ -208,7 +180,7 @@
               <li><a href="#"><strong>Home</strong></a></li>
               <li><a href="#main"><strong>Portfolio</strong></a></li>
               <li><a href="#contact"><strong>Contact</strong></a></li>
-              <!---<li><a href="#skills"><strong>Skills</strong></a></li>--->
+              <!-- <li><a href="#skills"><strong>Skills</strong></a></li> -->
             </ul>
           </nav>
         </div>
